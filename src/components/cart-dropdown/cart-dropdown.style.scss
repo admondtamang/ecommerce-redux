@@ -1,0 +1,35 @@
+.cart-dropdown {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  top: 90px;
+  right: 40px;
+  z-index: 5;
+
+  .cart-items {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    -ms-overflow-style: none;
+
+    .empty-message {
+      font-size: 18px;
+      margin: 50px auto;
+    }
+  }
+  .cart-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}
